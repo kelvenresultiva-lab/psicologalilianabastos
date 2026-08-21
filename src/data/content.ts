@@ -46,7 +46,7 @@ export const nav = [
   { label: "Blog", href: "/blog" },
 ] as const;
 export const header = {
-  ctaLabel: "Agendar consulta",
+  ctaLabel: "Quero agendar uma sessão",
 } as const;
 export const hero = {
   eyebrow: site.role,
@@ -57,14 +57,14 @@ export const hero = {
   headlineHighlight: "compreender",
   subheadline: "Psicoterapia para adolescentes e adultos, presencial em Viçosa (MG) e online.",
   subtitle:
-    "Psicoterapia para adolescentes e adultos em um espaço de escuta ética e acolhedora, com abordagem em Terapia Cognitivo-Comportamental. Trabalho com ansiedade, depressão, sexualidade e identidade de gênero, e transtorno bipolar — presencial em Viçosa (MG) ou online.",
+    "Atendo adolescentes e adultos em psicoterapia, com abordagem em Terapia Cognitivo-Comportamental (TCC), oferecendo um espaço de escuta ética, acolhedora e sem julgamentos.",
   mobileText:
     "Atendo adolescentes e adultos que desejam compreender melhor suas emoções e viver com mais equilíbrio, acolhendo questões como ansiedade, depressão, sexualidade, identidade de gênero e transtorno bipolar. Se você sente que é hora de cuidar de si, agende sua sessão.",
   checklist: [
     "Ansiedade, depressão, sexualidade e gênero",
     "Terapia Cognitivo-Comportamental (TCC)",
   ],
-  ctaLabel: "Agendar sua consulta",
+  ctaLabel: "Quero agendar uma sessão",
   ctaSecondaryLabel: "Conhecer meu trabalho",
   ctaSecondaryHref: "#sobre",
   image: {
@@ -79,19 +79,19 @@ export const heroStat = {
 } as const;
 export const specialties = {
   eyebrow: "COMO POSSO TE AJUDAR",
-  title: "Um cuidado pensado pra o que você está vivendo",
+  title: "Um cuidado pensado para o que você está vivendo.",
   subtitle:
     "Aqui você não recebe respostas prontas. Você tem uma psicóloga do seu lado, com escuta ética e um acompanhamento pensado pra sua própria história.",
   items: [
     {
       title: "Ansiedade",
       description:
-        "Uma ansiedade que não passa, pensamentos acelerados, dificuldade pra relaxar? Trabalho para que você entenda o que sente e encontre mais equilíbrio no dia a dia.",
+        "Uma ansiedade que não passa, pensamentos acelerados, dificuldade pra relaxar? Trabalho para que você compreenda melhor seus pensamentos, emoções e comportamentos e desenvolva estratégias para lidar com as situações do dia a dia.",
     },
     {
       title: "Depressão",
       description:
-        "Tristeza persistente, falta de energia, perda de interesse pelas coisas? Ofereço um espaço de escuta para você atravessar esse momento com mais leveza.",
+        "Tristeza persistente, falta de energia, perda de interesse pelas coisas? Um espaço de escuta e acompanhamento para compreender o que você está vivendo e construir, gradualmente, recursos para lidar com esse momento.",
     },
     {
       title: "Sexualidade",
@@ -106,7 +106,7 @@ export const specialties = {
     {
       title: "Transtorno Bipolar",
       description:
-        "Acompanhamento psicológico contínuo para quem convive com transtorno bipolar, com escuta qualificada e cuidado de longo prazo.",
+        "Acompanhamento psicológico para pessoas que convivem com o transtorno bipolar, com foco no autoconhecimento, manejo emocional e construção de estratégias para o cotidiano.",
     },
     {
       title: "Terapia Cognitivo-Comportamental",
@@ -120,9 +120,9 @@ export const about = {
   greeting: "Olá, sou",
   title: "Liliana Bastos",
   paragraphs: [
-    "Sou psicóloga clínica, formada em Psicologia desde janeiro de 2012. Sou mestre em Políticas Públicas, com pós-graduações em Terapia Familiar, Dependência de Álcool e Drogas, Terapia Cognitivo-Comportamental e Avaliação Psicológica — uma formação construída ao longo de mais de 14 anos de trajetória clínica.",
-    "Atendo adolescentes e adultos com abordagem em Terapia Cognitivo-Comportamental (TCC), cuidando de quem enfrenta ansiedade, depressão, questões de sexualidade e identidade de gênero, ou convive com transtorno bipolar — sempre com um espaço de escuta ética, acolhedora e sem julgamentos.",
-    "Sou uma psicóloga PCD auditiva, e essa vivência faz parte de como me relaciono com o cuidado e a escuta na clínica.",
+    "Sou psicóloga clínica, formada em Psicologia em 2011.",
+    "Sou mestre em Políticas Públicas, com pós-graduações em Terapia Familiar, Dependência de Álcool e Drogas, Terapia Cognitivo-Comportamental e Avaliação Psicológica.",
+    "Também sou uma psicóloga com deficiência auditiva, uma vivência que faz parte da minha trajetória e da forma como compreendo a importância da escuta, da acessibilidade e do acolhimento.",
   ],
   ctaText: "Se você sente que é hora de conversar sobre o que está vivendo, esse é um bom primeiro passo. Vamos conversar?",
   image: {
@@ -181,7 +181,7 @@ export const process = {
     { label: "Escuta acolhedora", value: 100 },
     { label: "Compromisso com o processo", value: 97 },
   ],
-  ctaLabel: "Agende sua consulta",
+  ctaLabel: "Quero agendar uma sessão",
   image: {
     src: "/images/liliana-processo.png",
     alt: "Liliana Bastos durante uma sessão de atendimento",
@@ -189,33 +189,29 @@ export const process = {
 } as const;
 export const reasons = {
   eyebrow: "COMO A TERAPIA PODE TE AJUDAR",
-  title: "O que muda no seu dia a dia",
+  title: "O que podemos trabalhar em terapia",
   subtitle:
     "A terapia proporciona equilíbrio emocional, autoconhecimento e mais segurança para tomar decisões — com um trabalho pautado na ética e no acolhimento.",
   items: [
     {
       number: "01",
-      title: "Redução da ansiedade",
-      description:
-        "Desenvolva estratégias reais para lidar com a ansiedade do dia a dia, com mais equilíbrio emocional.",
+      title: "Compreensão da ansiedade",
+      description: "Entenda os gatilhos e sintomas da ansiedade e encontre formas mais leves de lidar com ela.",
     },
     {
       number: "02",
-      title: "Acolhimento para viver sua identidade",
-      description:
-        "Um espaço seguro para elaborar questões de sexualidade e identidade de gênero, sem julgamentos.",
+      title: "Autoconhecimento e regulação emocional",
+      description: "Desenvolva mais clareza sobre si mesma e ferramentas para lidar com suas emoções.",
     },
     {
       number: "03",
-      title: "Mais estabilidade emocional",
-      description:
-        "Construa recursos para lidar com oscilações de humor e fortalecer sua rotina de cuidado.",
+      title: "Sexualidade e identidade",
+      description: "Um espaço seguro para elaborar questões de sexualidade e identidade de gênero, sem julgamentos.",
     },
     {
       number: "04",
-      title: "Autoconhecimento",
-      description:
-        "Ganhe clareza sobre seus sentimentos e mais confiança para tomar decisões importantes na sua vida.",
+      title: "Estratégias para lidar com situações do cotidiano",
+      description: "Construa recursos práticos para enfrentar os desafios da rotina com mais equilíbrio.",
     },
   ],
 } as const;
@@ -224,14 +220,27 @@ export const faq = {
   title: "Ainda tem dúvidas?",
   featured: {
     eyebrow: "DÚVIDAS FREQUENTES",
-    title: "Por que buscar acompanhamento psicológico?",
-    paragraphs: [
-      "Muita gente adia a terapia por medo de ser julgada, por não saber como funciona o processo, ou por acreditar que precisa resolver tudo sozinha. Mas buscar ajuda é o primeiro passo para o equilíbrio emocional que você merece.",
-      "Esse processo acontece a partir da relação de confiança entre psicóloga e paciente — por isso, é importante encontrar uma profissional qualificada, ética e responsável, com quem você se sinta à vontade.",
+    title: "Talvez seja hora de buscar ajuda se você…",
+    paragraphs: [],
+    checklist: [
+      "sente que a ansiedade está interferindo na sua rotina",
+      "tem dificuldade para compreender ou lidar com suas emoções",
+      "está passando por mudanças ou conflitos pessoais",
+      "enfrenta dificuldades relacionadas à autoestima, identidade ou relacionamentos",
+      "sente que precisa de um espaço para falar sem julgamentos",
     ],
-    ctaLabel: "Quero iniciar meu processo terapêutico",
+    closingParagraphs: [
+      "Você não precisa enfrentar tudo sozinho(a).",
+      "Cuidar da saúde emocional também é uma forma de cuidar de si. Se você sente que é hora de começar, podemos conversar.",
+    ],
+    ctaLabel: "Quero agendar uma sessão",
   },
   items: [
+    {
+      question: "E se eu nunca fiz terapia?",
+      answer:
+        "Na primeira sessão, vamos conversar sobre o que trouxe você até aqui, sua história e aquilo que deseja transformar. Não é necessário saber exatamente o que dizer ou por onde começar. A terapia é construída ao longo do processo, respeitando seu tempo e suas necessidades.",
+    },
     {
       question: "Como funciona a primeira sessão?",
       answer:
@@ -269,6 +278,6 @@ export const footer = {
     "Um espaço seguro, ético e acolhedor para adolescentes e adultos desenvolverem recursos emocionais e construírem uma vida com mais equilíbrio e significado.",
   quickLinksTitle: "Links rápidos",
   hoursTitle: "Horário de atendimento",
-  ctaLabel: "Agende sua consulta",
+  ctaLabel: "Quero agendar uma sessão",
   rightsText: `© ${new Date().getFullYear()} ${site.name} — ${site.role}. Todos os direitos reservados.`,
 } as const;

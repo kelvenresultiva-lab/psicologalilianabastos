@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { Check, ChevronDown } from "lucide-react";
 import { faq, whatsappLink } from "@/data/content";
 import Button from "@/components/Button";
 import Reveal from "@/components/Reveal";
@@ -24,6 +24,28 @@ export default function FAQ() {
           </h2>
 
           {faq.featured.paragraphs.map((paragraph) => (
+            <p
+              key={paragraph}
+              className="font-heebo text-base font-light leading-relaxed text-muted"
+            >
+              {paragraph}
+            </p>
+          ))}
+
+          <div className="flex flex-col gap-3">
+            {faq.featured.checklist.map((item) => (
+              <div key={item} className="flex items-start gap-3">
+                <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gold-bright">
+                  <Check size={12} strokeWidth={3} className="text-white" />
+                </span>
+                <span className="font-heebo text-base font-light leading-relaxed text-muted">
+                  {item}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          {faq.featured.closingParagraphs.map((paragraph) => (
             <p
               key={paragraph}
               className="font-heebo text-base font-light leading-relaxed text-muted"

@@ -1,5 +1,5 @@
 import { MessageCircle } from "lucide-react";
-import { whatsappLink } from "@/data/content";
+import { hero, whatsappLink } from "@/data/content";
 
 export default function WhatsAppButton() {
   return (
@@ -7,10 +7,13 @@ export default function WhatsAppButton() {
       href={whatsappLink()}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Conversar no WhatsApp"
-      className="hover-float fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg"
+      aria-label={hero.ctaLabel}
+      className="hover-float fixed bottom-6 right-6 z-50 flex h-14 items-center gap-2 rounded-full bg-[#25D366] px-4 text-white shadow-lg sm:pr-6"
     >
-      <MessageCircle size={28} fill="currentColor" strokeWidth={0} />
+      <MessageCircle size={26} fill="currentColor" strokeWidth={0} className="shrink-0" />
+      <span className="hidden font-lato text-sm font-semibold uppercase tracking-[0.5px] whitespace-nowrap sm:inline">
+        {hero.ctaLabel}
+      </span>
     </a>
   );
 }
