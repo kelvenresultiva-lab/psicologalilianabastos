@@ -45,9 +45,6 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: pageTitle,
   description: site.metaDescription,
-  icons: {
-    icon: "/images/logo-liliana-bastos-mono.png",
-  },
   openGraph: {
     title: pageTitle,
     description: site.metaDescription,
