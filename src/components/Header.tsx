@@ -8,7 +8,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 bg-[#692327]">
-      <div className="mx-auto flex max-w-[1140px] items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-[1140px] items-center justify-between px-6 py-2.5 xl:py-4">
         <a href="#hero" aria-label="Início" className="flex items-center">
           <Image
             src={brand.logo.src}

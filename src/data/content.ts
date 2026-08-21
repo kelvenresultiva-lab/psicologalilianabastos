@@ -1,9 +1,9 @@
 export const brand = {
   logo: {
-    src: "/images/logo-liliana-bastos-mono.png",
+    src: "/images/logo-liliana-bastos.png",
     alt: "Liliana Bastos",
-    width: 1254,
-    height: 1254,
+    width: 1536,
+    height: 1024,
   },
 } as const;
 export const site = {
@@ -58,6 +58,8 @@ export const hero = {
   subheadline: "Psicoterapia para adolescentes e adultos, presencial em Viçosa (MG) e online.",
   subtitle:
     "Psicoterapia para adolescentes e adultos em um espaço de escuta ética e acolhedora, com abordagem em Terapia Cognitivo-Comportamental. Trabalho com ansiedade, depressão, sexualidade e identidade de gênero, e transtorno bipolar — presencial em Viçosa (MG) ou online.",
+  mobileText:
+    "Atendo adolescentes e adultos que desejam compreender melhor suas emoções e viver com mais equilíbrio, acolhendo questões como ansiedade, depressão, sexualidade, identidade de gênero e transtorno bipolar. Se você sente que é hora de cuidar de si, agende sua sessão.",
   checklist: [
     "Ansiedade, depressão, sexualidade e gênero",
     "Terapia Cognitivo-Comportamental (TCC)",
@@ -109,7 +111,7 @@ export const specialties = {
     {
       title: "Terapia Cognitivo-Comportamental",
       description:
-        "Minha abordagem é baseada em TCC: um método estruturado, com embasamento científico, focado em mudanças práticas na sua vida.",
+        "Minha abordagem é baseada em TCC: um método com embasamento científico, focado em mudanças práticas na sua vida.",
     },
   ],
 } as const;
@@ -187,7 +189,7 @@ export const process = {
 } as const;
 export const reasons = {
   eyebrow: "COMO A TERAPIA PODE TE AJUDAR",
-  title: "O que muda no seu dia a dia",
+  title: "O que muda no seu dia a dia",
   subtitle:
     "A terapia proporciona equilíbrio emocional, autoconhecimento e mais segurança para tomar decisões — com um trabalho pautado na ética e no acolhimento.",
   items: [

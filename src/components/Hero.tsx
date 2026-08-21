@@ -69,25 +69,35 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Mobile — arte pronta. Escalada como um bloco só (imagem + botão),
-          então a posição em % do botão continua batendo com a imagem. */}
-      <div className="relative block w-full overflow-hidden lg:hidden">
-        <div className="relative left-1/2 w-[118%] -translate-x-1/2">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/images/mobile-canva.png"
-            alt="Liliana Bastos - Psicóloga Clínica"
-            className="block h-auto w-full"
-          />
-          <div className="absolute" style={{ left: "20%", right: "22%", top: "89%", bottom: "4%" }}>
-            <Button
-              href={whatsappLink()}
-              className="!h-full !w-full !rounded-full !border-0 !text-xs"
-            >
+      {/* Mobile — foto + badges (arte pronta), texto real puxado pra cima
+          por baixo dela, mesma estrutura do mobile da Miriam. */}
+      <div className="relative block w-full bg-white lg:hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/mobile-canva.png"
+          alt="Liliana Bastos - Psicóloga Clínica"
+          className="block h-auto w-full"
+        />
+
+        <Reveal direction="up" className="relative -mt-[63%] px-6 pb-10 text-center">
+          <h1 className="font-mosseta leading-[1.1] text-ink">
+            <span className="block text-2xl">{hero.greeting}</span>
+            <span className="mt-1 block text-4xl text-gold-bright">{hero.name}</span>
+          </h1>
+
+          <p className="mx-auto mt-4 max-w-sm font-heebo text-[15px] font-normal leading-relaxed text-ink/80">
+            {hero.mobileText}
+          </p>
+
+          <div className="mt-7 flex flex-col items-center gap-3">
+            <Button href={whatsappLink()} className="!w-[90%] !justify-center">
               {hero.ctaLabel}
             </Button>
+            <Button href={hero.ctaSecondaryHref} variant="outline" className="!w-[90%] !justify-center">
+              {hero.ctaSecondaryLabel}
+            </Button>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

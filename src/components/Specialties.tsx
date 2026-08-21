@@ -21,12 +21,12 @@ export default function Specialties() {
           {specialties.items.map((item, index) => (
             <Reveal direction="up" delay={index * 100} key={item.title} className="h-full">
               <article
-                className="flex h-full flex-col items-center justify-start rounded-[12px] bg-white px-6 py-7 text-center shadow-[0_8px_24px_rgba(0,0,0,0.05)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(0,0,0,0.065)] md:px-9 lg:min-h-[230px] lg:rounded-[14px] lg:px-10 lg:py-10 lg:shadow-[0_10px_28px_rgba(0,0,0,0.055)]"
+                className="flex h-full flex-col items-center justify-start rounded-[12px] bg-white px-6 py-5 text-center shadow-[0_8px_24px_rgba(0,0,0,0.05)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(0,0,0,0.065)] md:px-8 lg:rounded-[14px] lg:px-8 lg:py-7 lg:shadow-[0_10px_28px_rgba(0,0,0,0.055)]"
               >
-                <h3 className="font-playfair text-[20px] font-semibold leading-tight text-ink lg:text-[24px]">
+                <h3 className="font-playfair text-[18px] font-semibold leading-tight text-ink lg:text-[21px]">
                   {item.title}
                 </h3>
-                <p className="mx-auto mt-8 max-w-[330px] font-heebo text-[15px] leading-[1.65] text-muted lg:text-[16px] lg:leading-[1.7]">
+                <p className="mx-auto mt-3 max-w-[330px] font-heebo text-[14px] leading-[1.5] text-muted lg:text-[15px] lg:leading-[1.55]">
                   {item.description}
                 </p>
               </article>

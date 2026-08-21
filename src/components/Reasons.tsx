@@ -10,7 +10,7 @@ export default function Reasons() {
             {reasons.eyebrow}
           </p>
           <h2 className="mt-4 font-playfair text-3xl font-semibold leading-tight text-ink sm:text-4xl">
-            {reasons.title}
+            {reasons.title.replace(/dia a dia$/, "dia a dia")}
           </h2>
           <p className="mt-4 font-heebo text-base font-light leading-relaxed text-muted">
             {reasons.subtitle}

@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   title: pageTitle,
   description: site.metaDescription,
   icons: {
-    icon: "/images/logo-liliana-bastos.png",
+    icon: "/images/logo-liliana-bastos-mono.png",
   },
   openGraph: {
     title: pageTitle,
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/logo-liliana-bastos.png",
+        url: "/images/logo-liliana-bastos-mono.png",
         width: 1254,
         height: 1254,
         alt: `Logo ${site.name}`,
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: pageTitle,
     description: site.metaDescription,
-    images: ["/images/logo-liliana-bastos.png"],
+    images: ["/images/logo-liliana-bastos-mono.png"],
   },
 };
 export default function RootLayout({
