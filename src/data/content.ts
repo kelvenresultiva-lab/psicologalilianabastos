@@ -10,14 +10,14 @@ export const site = {
   name: "Liliana Bastos",
   fullName: "Liliana Bastos",
   role: "Psicóloga Clínica",
-  crp: "CRP a confirmar",
+  crp: "CRP 04/36259",
   city: "Viçosa",
   state: "MG",
   address: {
-    street: "R. Padre Serafim, 138 - Centro",
-    cityLine: "Viçosa - MG, 36570-000",
-    mapsUrl: "https://www.google.com/maps?q=R.+Padre+Serafim,+138,+Centro,+Vi%C3%A7osa+-+MG",
-    embedQuery: "R. Padre Serafim, 138, Centro, Viçosa - MG",
+    street: "R. Benjamim Araújo, 56, sala 311, Edifício Panorama - Centro",
+    cityLine: "Viçosa - MG, 36576-000",
+    mapsUrl: "https://www.google.com/maps?q=R.+Benjamim+Ara%C3%BAjo,+56,+Centro,+Vi%C3%A7osa+-+MG,+36576-000",
+    embedQuery: "R. Benjamim Araújo, 56, Centro, Viçosa - MG",
   },
   phoneDisplay: "(31) 9 8718-9676",
   whatsappNumber: "5531987189676",
@@ -26,7 +26,7 @@ export const site = {
   instagramAccounts: [
     { handle: "@liliana.pbastos", url: "https://www.instagram.com/liliana.pbastos" },
   ],
-  hours: "Horário de atendimento a confirmar",
+  hours: "Atendimento mediante agendamento",
   hoursNote: "As consultas necessitam ser previamente agendadas.",
   modality: "Atendimento presencial em Viçosa (MG) e online",
   metaDescription:
@@ -249,7 +249,7 @@ export const faq = {
     {
       question: "A Liliana atende convênio?",
       answer:
-        "O atendimento é particular. Emito documentação para solicitação de reembolso quando o seu convênio oferece esse benefício.",
+        "No momento, atendo pelo plano IMAS e também de forma particular. Para outros convênios, emito documentação para solicitação de reembolso quando o seu plano oferece esse benefício.",
     },
     {
       question: "Qual público a Liliana atende?",
