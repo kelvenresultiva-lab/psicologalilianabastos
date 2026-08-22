@@ -120,7 +120,7 @@ export const about = {
   greeting: "Olá, sou",
   title: "Liliana Bastos",
   paragraphs: [
-    "Sou psicóloga clínica, formada em Psicologia em 2011.",
+    `Sou psicóloga clínica (${site.crp}), formada em Psicologia em 2011.`,
     "Sou mestre em Políticas Públicas, com pós-graduações em Terapia Familiar, Dependência de Álcool e Drogas, Terapia Cognitivo-Comportamental e Avaliação Psicológica.",
     "Também sou uma psicóloga com deficiência auditiva, uma vivência que faz parte da minha trajetória e da forma como compreendo a importância da escuta, da acessibilidade e do acolhimento.",
   ],
