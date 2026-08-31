@@ -13,12 +13,6 @@ export const site = {
   crp: "CRP 04/36259",
   city: "Viçosa",
   state: "MG",
-  address: {
-    street: "R. Benjamim Araújo, 56, sala 311, Edifício Panorama - Centro",
-    cityLine: "Viçosa - MG, 36576-000",
-    mapsUrl: "https://www.google.com/maps?q=R.+Benjamim+Ara%C3%BAjo,+56,+Centro,+Vi%C3%A7osa+-+MG,+36576-000",
-    embedQuery: "R. Benjamim Araújo, 56, Centro, Viçosa - MG",
-  },
   phoneDisplay: "(31) 9 8718-9676",
   whatsappNumber: "5531987189676",
   whatsappMessage:
@@ -32,6 +26,22 @@ export const site = {
   metaDescription:
     "Liliana Bastos é psicóloga clínica em Viçosa (MG), com abordagem em Terapia Cognitivo-Comportamental. Atende adolescentes e adultos, com foco em ansiedade, depressão, sexualidade e identidade de gênero, e transtorno bipolar. Atendimento presencial e online.",
 } as const;
+// Ela atende em 2 endereços diferentes — cada card mostra a foto do espaço
+// junto com o endereço correspondente, pra quem for até lá reconhecer o
+// lugar certo. O segundo local ainda não foi enviado.
+export const locations = [
+  {
+    name: "Unidade Centro",
+    street: "R. Benjamim Araújo, 56, sala 311, Edifício Panorama - Centro",
+    cityLine: "Viçosa - MG, 36576-000",
+    mapsUrl:
+      "https://www.google.com/maps?q=R.+Benjamim+Ara%C3%BAjo,+56,+Centro,+Vi%C3%A7osa+-+MG,+36576-000",
+    image: {
+      src: "/images/liliana-local-01.png",
+      alt: "Espaço de atendimento da Liliana Bastos — Unidade Centro",
+    },
+  },
+] as const;
 export function whatsappLink(customMessage?: string) {
   const message = encodeURIComponent(customMessage ?? site.whatsappMessage);
   return `https://wa.me/${site.whatsappNumber}?text=${message}`;

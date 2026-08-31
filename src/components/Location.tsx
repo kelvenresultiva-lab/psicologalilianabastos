@@ -1,22 +1,13 @@
-import { AtSign, MapPin, Phone } from "lucide-react";
+import { AtSign, Phone } from "lucide-react";
 import { site, whatsappLink } from "@/data/content";
 import Reveal from "@/components/Reveal";
 export default function Location() {
-  const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(
-    site.address.embedQuery
-  )}&t=m&z=15&output=embed&iwloc=near`;
   const contactItems = [
     {
       icon: Phone,
       title: "Contato Telefônico",
       value: site.phoneDisplay,
       href: whatsappLink(),
-    },
-    {
-      icon: MapPin,
-      title: "Endereço de Atendimento",
-      value: `${site.address.street} - ${site.address.cityLine}`,
-      href: site.address.mapsUrl,
     },
     {
       icon: AtSign,
@@ -27,15 +18,9 @@ export default function Location() {
   ];
   return (
     <section>
-      <iframe
-        src={mapSrc}
-        title={site.address.street}
-        loading="lazy"
-        className="h-[500px] w-full border-0 grayscale"
-      />
       <Reveal
         direction="up"
-        className="relative z-10 -mt-[66px] grid grid-cols-1 bg-dark sm:grid-cols-3"
+        className="grid grid-cols-1 bg-dark sm:grid-cols-2"
       >
         {contactItems.map((item, index) => {
           const Icon = item.icon;
