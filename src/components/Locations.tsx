@@ -12,7 +12,7 @@ export default function Locations() {
             ONDE ATENDO
           </p>
           <h2 className="mt-4 font-playfair text-3xl font-semibold leading-tight text-ink sm:text-4xl">
-            Um espaço para te receber
+            Dois espaços para te receber
           </h2>
         </Reveal>
 
@@ -23,7 +23,7 @@ export default function Locations() {
         >
           {locations.map((location, index) => (
             <Reveal
-              key={location.street}
+              key={location.name}
               direction="up"
               delay={index * 100}
               className="overflow-hidden rounded-2xl border border-line/70 bg-white"
@@ -41,11 +41,13 @@ export default function Locations() {
                 <h3 className="font-playfair text-lg font-semibold text-ink">
                   {location.name}
                 </h3>
-                <p className="mt-2 font-heebo text-sm leading-relaxed text-muted">
-                  {location.street}
-                  <br />
-                  {location.cityLine}
-                </p>
+                {location.street && (
+                  <p className="mt-2 font-heebo text-sm leading-relaxed text-muted">
+                    {location.street}
+                    <br />
+                    {location.cityLine}
+                  </p>
+                )}
                 <a
                   href={location.mapsUrl}
                   target="_blank"

@@ -28,7 +28,8 @@ export const site = {
 } as const;
 // Ela atende em 2 endereços diferentes — cada card mostra a foto do espaço
 // junto com o endereço correspondente, pra quem for até lá reconhecer o
-// lugar certo. O segundo local ainda não foi enviado.
+// lugar certo. O segundo local só tem o nome por enquanto (endereço
+// completo ainda não foi enviado).
 export const locations = [
   {
     name: "Unidade Centro",
@@ -39,6 +40,16 @@ export const locations = [
     image: {
       src: "/images/liliana-local-01.png",
       alt: "Espaço de atendimento da Liliana Bastos — Unidade Centro",
+    },
+  },
+  {
+    name: "Clínica Integrare",
+    street: "",
+    cityLine: "",
+    mapsUrl: "https://www.google.com/maps/search/Cl%C3%ADnica+Integrare+Vi%C3%A7osa+MG",
+    image: {
+      src: "/images/liliana-local-02.jpeg",
+      alt: "Espaço de atendimento da Liliana Bastos — Clínica Integrare",
     },
   },
 ] as const;
